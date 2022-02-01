@@ -1,0 +1,46 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+/* label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+} */
+
+main div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+}
+
+textarea {
+  /* outline: 0; */
+  border-width: 0 0 4px;
+  border-color: hsl(226, 43%, 44%);
+  background-color: #f4ecf2;
+  font-weight: bold;
+}
+
+button {
+  background-color: hsl(226, 43%, 44%);
+  font-family: "Bungee", cursive;
+  color: #ffffff;
+}
+
+.counter {
+  font-family: "Bungee", cursive;
+}
+
+.overCharCount {
+  color: red;
+}
+/* 
+.underCharCount {
+  font-family: "Bungee", cursive;
+  color: #545149;
+} */

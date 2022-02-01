@@ -7,6 +7,10 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 5;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .write-tweet {

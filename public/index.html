@@ -42,6 +42,18 @@
     <!-- Header CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+    <!-- Tweet Container CSS -->
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+
+    <!-- Tweets JSON -->
+    <script
+      type="text/javascript"
+      src="/server/data-files/initial-tweets.json"
+    ></script>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -61,18 +73,74 @@
       </div>
     </nav>
 
+    <header class="header">
+      <div>
+        <img src="/images/profile-hex.png" />
+      </div>
+
+      <br />
+      <div>
+        <h2>Your Name</h2>
+      </div>
+    </header>
+
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <header>
-        <div>
-          <img src="/images/profile-hex.png" />
-        </div>
-
-        <br />
-        <div>
-          <h2>Your Name</h2>
-        </div>
-      </header>
+      <section>
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="POST">
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <article class="article-container">
+        <!-- <div class="article-container"> -->
+        <header class="tweet-header">
+          <div class="profileDisplayNameOnTweet">
+            <span class="profilePic">ProfilePic</span>
+            <span class="profileName">ProfileName</span>
+          </div>
+          <div>
+            <span class="twitter-handle">Twitter Handle</span>
+          </div>
+        </header>
+        <main>
+          <div>
+            <p>
+              tweet texter errer ere rerererer erererer ereyfd fghd hjedf
+              gdsfgdfgfdre erer
+            </p>
+          </div>
+        </main>
+        <footer>
+          <div>Date posted</div>
+          <div>
+            <span>
+              <i class="fas fa-flag"></i>
+            </span>
+            <span>
+              <i class="fas fa-retweet"></i>
+            </span>
+            <span>
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+        </footer>
+        <!-- </div> -->
+      </article>
     </main>
+    <!--Character counter JS-->
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </body>
 </html>
