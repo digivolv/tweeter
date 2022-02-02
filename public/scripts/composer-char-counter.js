@@ -3,7 +3,7 @@ $(document).ready(function () {
   //   console.log("blur  on the text", this);
   // });
   let currentTweetLength = 0;
-  let maxTweetLength = 140;
+  const maxTweetLength = 140;
   const counter = $(this).parent().find(".counter");
 
   $("#tweet-text").change(function () {

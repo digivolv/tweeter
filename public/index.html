@@ -48,6 +48,14 @@
     <!-- Tweet Container CSS -->
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
 
+    <!--Timeago -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Tweets JSON -->
     <script
       type="text/javascript"
@@ -56,6 +64,9 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Submit Tweet JS -->
+    <script type="text/javascript" src="/scripts/submit-tweet.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -88,7 +99,7 @@
     <main class="container">
       <section>
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
+        <form action="/tweets" method="POST" class="submit-tweet">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea
             name="text"
@@ -101,9 +112,8 @@
           </div>
         </form>
       </section>
-      <article class="article-container">
-        <!-- <div class="article-container"> -->
-        <header class="tweet-header">
+      <article class="tweets-container">
+        <!-- <header class="tweet-header">
           <div class="profileDisplayNameOnTweet">
             <span class="profilePic">ProfilePic</span>
             <span class="profileName">ProfileName</span>
@@ -133,8 +143,7 @@
               <i class="fas fa-heart"></i>
             </span>
           </div>
-        </footer>
-        <!-- </div> -->
+        </footer> -->
       </article>
     </main>
     <!--Character counter JS-->
