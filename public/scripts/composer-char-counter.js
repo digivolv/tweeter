@@ -4,19 +4,20 @@ $(document).ready(function () {
   // });
   let currentTweetLength = 0;
   const maxTweetLength = 140;
-  const counter = $(this).parent().find(".counter");
+  const counter = $(".counter");
+
+  //$(this).parent().find(".counter");
 
   $("#tweet-text").change(function () {
     currentTweetLength = $(this).val().length;
-    // console.log($("#tweet-text").val().length);
-    console.log(currentTweetLength);
 
-    $(".counter").html(maxTweetLength - currentTweetLength);
+    // console.log(currentTweetLength);
 
     if (currentTweetLength > 140) {
       counter.addClass("overCharCount");
     } else if (currentTweetLength <= 140) {
       counter.removeClass("overCharCount");
     }
+    $(".counter").html(maxTweetLength - currentTweetLength);
   });
 });

@@ -70,6 +70,11 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <!--Character counter JS-->
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -99,6 +104,9 @@
     <main class="container">
       <section>
         <h2>Compose Tweet</h2>
+        <section class="validation-error">
+          ⚠️You are not within the character limits!⚠️
+        </section>
         <form action="/tweets" method="POST" class="submit-tweet">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea
@@ -112,7 +120,7 @@
           </div>
         </form>
       </section>
-      <article class="tweets-container">
+      <article class="new-tweets-container">
         <!-- <header class="tweet-header">
           <div class="profileDisplayNameOnTweet">
             <span class="profilePic">ProfilePic</span>
@@ -146,10 +154,5 @@
         </footer> -->
       </article>
     </main>
-    <!--Character counter JS-->
-    <script
-      type="text/javascript"
-      src="/scripts/composer-char-counter.js"
-    ></script>
   </body>
 </html>
