@@ -80,11 +80,11 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span><a class="logo" href="/">tweeter</a></span>
       <div class="write-tweet">
         <!-- <span> Write a new tweet </span> -->
         <span> <b>Write</b> a new tweet</span>
-        <i class="fas fa-angle-double-down"></i>
+        <span><i class="fas fa-angle-double-down"></i></span>
         <!-- <span><i class="fas fa-angle-double-down"></i></span> -->
       </div>
     </nav>
@@ -102,10 +102,11 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section>
+      <section class="tweet-submit-container">
         <h2>Compose Tweet</h2>
         <section class="validation-error">
-          ⚠️You are not within the character limits!⚠️
+          ⚠️You are not within the character limits. Please modify your tweet
+          and try again.
         </section>
         <form action="/tweets" method="POST" class="submit-tweet">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
@@ -115,7 +116,7 @@
             placeholder="What are you humming about?"
           ></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button class="submit-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
@@ -154,5 +155,6 @@
         </footer> -->
       </article>
     </main>
+    <div id="scroll-to-top"></div>
   </body>
 </html>

@@ -5,8 +5,17 @@
  */
 
 $(document).ready(function () {
+  $(".tweet-submit-container").hide();
   $(".validation-error").hide();
   loadTweets();
+
+  $(".write-tweet").click(function () {
+    if ($(".tweet-submit-container").is(":hidden")) {
+      $(".tweet-submit-container").slideDown("slow", function () {});
+    } else {
+      $(".tweet-submit-container").slideUp("slow", function () {});
+    }
+  });
 });
 
 const escape = function (str) {

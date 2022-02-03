@@ -8,8 +8,6 @@ article.article-container {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 1em;
-
-  /* align-items: start; */
 }
 article.article-container:hover {
   border: solid;
@@ -19,21 +17,17 @@ article.article-container:hover {
 
   box-shadow: 5px 10px #888888;
 }
-/* .article-container {
-  margin: 0, 0.5em;
-} */
+
 article main {
   border: solid;
   border-width: 0 0 4px;
   border-color: hsl(226, 43%, 44%);
 }
 footer {
-  /* border: solid;
-  border-width: 4px 0 0;
-  border-color: hsl(226, 43%, 44%); */
   background-color: #f4ecf2;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 1.5em;
   font-size: small;
 }

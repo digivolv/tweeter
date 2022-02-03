@@ -2,6 +2,13 @@ h2 {
   display: flex;
   justify-content: center;
 }
+article span {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.profilePic {
+  margin-top: 0.5em;
+}
 
 form {
   display: flex;
@@ -26,7 +33,7 @@ textarea {
   font-weight: bold;
 }
 
-button {
+.submit-button {
   background-color: hsl(226, 43%, 44%);
   font-family: "Bungee", cursive;
   color: #ffffff;
@@ -46,11 +53,18 @@ button {
   border-color: rgba(255, 0, 0, 0.2);
   text-align: center;
   font-weight: bold;
+  font-size: small;
   padding: 0.5em;
 }
 
-/* 
-.underCharCount {
-  font-family: "Bungee", cursive;
-  color: #545149;
-} */
+#scroll-to-top {
+  background-color: blue;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+  position: fixed;
+  right: 1em;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}

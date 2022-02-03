@@ -12,6 +12,12 @@ nav {
   top: 0;
   width: 100%;
 }
+nav div:hover {
+  text-shadow: 2px 2px #a3bfdb;
+}
+nav span:hover {
+  text-shadow: 2px 2px #a3bfdb;
+}
 
 .write-tweet {
   display: flex;

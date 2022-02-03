@@ -13,20 +13,19 @@ $(document).ready(function () {
       // console.log($(this));
       $.ajax({
         url: "/tweets",
-        // method: "POST",
-        type: "POST",
+        method: "POST",
+        // type:"POST",
         // dataType: "application/json",
-
         //like the req body
-
         data: $(this).serialize(),
         success: function (responseData) {
           //set text area blank
           $("textarea").val("");
-          $.get("/tweets", (responseData) => {
-            const newTweet = responseData.slice(-1);
-            renderTweets(newTweet);
-          });
+          // $.get("/tweets", (responseData) => {
+          // const newTweet = responseData.slice(-1);
+          // renderTweets(newTweet);
+          // });
+          loadTweets();
         },
       });
     } else {
