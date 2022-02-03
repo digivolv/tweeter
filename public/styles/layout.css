@@ -28,6 +28,29 @@ body {
   margin: 0 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+@media only screen and (min-width: 1024px) {
+  header.header {
+    width: 33%;
+    float: left;
+    margin: 8em 3em 2em 2em;
+  }
+
+  .new-tweets-container {
+    padding-top: 2em;
+    width: 55%;
+    float: right;
+  }
+  main .tweet-submit-container {
+    padding-top: 2em;
+    width: 55%;
+    float: right;
+  }
+}
