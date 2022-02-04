@@ -12,7 +12,7 @@ This repository is the starter code for the project: Students will fork and clon
 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 5. Go to <http://localhost:8080/> in your browser.
 
-##Final Product
+## Final Product
 
 !["Main page with viewport width greater than 1024px"](https://github.com/digivolv/tweeter/blob/master/docs/main-page-desktop.PNG?raw=true)
 
@@ -22,3 +22,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Bodyparser
+- Chance
+- MD5
