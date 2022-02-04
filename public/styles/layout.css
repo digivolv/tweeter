@@ -32,9 +32,10 @@ a {
   text-decoration: none;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.tweet-text-container {
+  width: 70ch;
+  word-wrap: break-word;
+}
 
 @media only screen and (min-width: 1024px) {
   header.header {
