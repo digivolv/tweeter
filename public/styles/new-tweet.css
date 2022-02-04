@@ -14,10 +14,6 @@ form {
   display: flex;
   flex-direction: column;
 }
-/* label {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-} */
 
 main div {
   display: flex;
@@ -26,7 +22,6 @@ main div {
 }
 
 textarea {
-  /* outline: 0; */
   border-width: 0 0 4px;
   border-color: hsl(226, 43%, 44%);
   background-color: #f4ecf2;
@@ -59,9 +54,6 @@ textarea {
 
 #scroll-to-top {
   background-color: blue;
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: flex-end; */
   position: fixed;
   right: 1em;
   height: 300px;

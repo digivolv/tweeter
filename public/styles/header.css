@@ -5,8 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-image: url("/images/cubes.png");
   background-color: #a3bfdb;
-  /* padding-bottom: 0.5em; */
 }

@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function () {
   $(".tweet-submit-container").hide();
   $(".validation-error").hide();
@@ -36,7 +30,7 @@ const createTweetElement = (tweets) => {
     </div>
   </header>
   <main>
-    <div>
+    <div class = "tweet-text-container">
       <p>
       ${escape(tweets.content.text)}
       </p>
@@ -64,10 +58,6 @@ const renderTweets = (tweetData) => {
   tweetData.forEach((tweet) => {
     $(".new-tweets-container").prepend(createTweetElement(tweet));
   });
-
-  // for (let tweet of tweetElements) {
-  //   $(".container").append(createTweetElement(tweet));
-  // }
 };
 
 const loadTweets = () => {
