@@ -24,10 +24,6 @@ body {
   margin: 0 1.5em;
 }
 
-a {
-  text-decoration: none;
-}
-
 .tweet-text-container {
   width: 70ch;
   word-wrap: break-word;
