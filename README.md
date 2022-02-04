@@ -15,6 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 ##Final Product
 
 !["Main page with viewport width greater than 1024px"](https://github.com/digivolv/tweeter/blob/master/docs/main-page-desktop.PNG?raw=true)
+
 !["Main page with viewport width under 1024px"](https://github.com/digivolv/tweeter/blob/master/docs/main-page-mobile.PNG?raw=true)
 
 ## Dependencies
