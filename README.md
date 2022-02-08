@@ -11,13 +11,18 @@ This repository is the starter code for the project: Students will fork and clon
 3. Install dependencies using the `npm install` command.
 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 5. Go to <http://localhost:8080/> in your browser.
+6. Press the red down arrow button to write a tweet!
 
-##Final Product
+## Final Product
 
-!["Main page with viewport width greater than 1024px"]()
-!["Main page with viewport width under 1024px"]()
+!["Main page with viewport width greater than 1024px"](https://github.com/digivolv/tweeter/blob/master/docs/main-page-desktop.PNG?raw=true)
+
+!["Main page with viewport width under 1024px"](https://github.com/digivolv/tweeter/blob/master/docs/main-page-mobile.PNG?raw=true)
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- Bodyparser
+- Chance
+- MD5
