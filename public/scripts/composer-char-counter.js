@@ -3,7 +3,7 @@ $(document).ready(function () {
   const maxTweetLength = 140;
   const counter = $(".counter");
 
-  $("#tweet-text").change(function () {
+  $("#tweet-text").on("input", function () {
     currentTweetLength = $(this).val().length;
     if (currentTweetLength > 140) {
       counter.addClass("overCharCount");

@@ -14,7 +14,9 @@ $(document).ready(function () {
         data: $(this).serialize(),
         success: function (responseData) {
           $("textarea").val("");
-          loadTweets();
+          $(".new-tweets-container").empty();
+          const newTweet = responseData.slice(-1);
+          loadTweets(newTweet);
         },
       });
     } else {
