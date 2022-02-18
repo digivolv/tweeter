@@ -1,6 +1,8 @@
+//Submit tweet functionality
 $(document).ready(function () {
   $(".submit-tweet").submit(function (event) {
     event.preventDefault();
+    //Submit tweet error validation, ensures characters are within 0 - 140 characters
     $(".validation-error").hide();
     const maxTweetLength = 140;
     const minimumTweetLength = 0;

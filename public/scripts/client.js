@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Write tweet drop down functionality
   $(".tweet-submit-container").hide();
   $(".validation-error").hide();
   loadTweets();
@@ -12,6 +13,7 @@ $(document).ready(function () {
   });
 });
 
+//Escape parameters from being able to manipulate JS in tweet submission
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -54,12 +56,14 @@ const createTweetElement = (tweets) => {
   return layout;
 };
 
+//Renders tweets
 const renderTweets = (tweetData) => {
   tweetData.forEach((tweet) => {
     $(".new-tweets-container").prepend(createTweetElement(tweet));
   });
 };
 
+//Loads tweets
 const loadTweets = () => {
   $.get("/tweets", (tweets) => {
     renderTweets(tweets);
